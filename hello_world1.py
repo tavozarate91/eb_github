@@ -6,3 +6,5 @@ def f3():
 
 def f4(x):
     return x*x
+
+#Daniela, please write f5() and f6() 
