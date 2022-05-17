@@ -1,0 +1,58 @@
+1.Browser: Chrome Version 101.0.4951.67
+Das Email Eingabeelement funktioniert.
+Das Number Eingabeelement verfügt über 2 Knöpfe, womit man die Zahl im
+Feld erhöhen oder senken kann.
+Das Range Eingabeelement ist ein blauer Regler, den man nach links
+oder rechts ziehen kann.
+Das Color Eingabeelement ist eine Farbfläche. Sobald man auf die Fläche
+klickt öffnet sich eine Farbpalette mit der man die Farbe des Farbfeldes
+ändern kann.
+Das Time Eingabeelement ermöglicht eine Uhrzeit im Format hh:mm
+anzugeben. Rechts im Eingabefeld ist auch eine Uhr-Symbol. Klickt man
+auf die kleine Uhr öffnet sich ein kleines Fenster, wo man die Uhrzeit
+angeben kann.
+Das Date Eingabefeld ermöglicht ein Datum im Format tt.mm.jjjj
+anzugeben. Rechts im Eingabefeld ist ein Kalender-Symbol. Klickt man
+auf das Symbol öffnet sich ein kleines Fenster mit einem Kalender, wo
+man das Datum auswählen kann.
+Das Datetime Eingabefeld ist das Time und Date Eingabefeld kombiniert.
+
+2.Browser: Edge Version 101.0.1210.47
+In Edge funktioniert alles ähnlich nur das der Regler beim
+Range Eingabeelement grau-schwarz ist.
+
+3.Browser: Opera Version:86.0.4363.59
+In Opera funktioniert alles ähnlich nur das der Regler beim Range
+Eingabeelement grau ist und der Punkt beim Regler ist schwarz.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.Browser: Edge
+In dem Edge-Browser hat ebenso jedes Eingabeelement richtig funktioniert.
+
+2.Browser: Opera
+In dem Opera-Browser hat auch jedes Eingabeelement richtig funktioniert.
