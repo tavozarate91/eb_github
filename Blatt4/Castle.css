@@ -1,0 +1,35 @@
+#castle{
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+#tower{
+  position: relative;
+  top: 9px;
+  left: -180px;
+}
+
+#building{
+  position: relative;
+  top: 9px;
+  left: -185px;
+}
+
+#roof{
+  position: relative;
+  top: -117px;
+  left: 62px;
+}
+
+#flag{
+  position: relative;
+  top: -105px;
+  left: 93px;
+}
+
+#window{
+  position: relative;
+  top: -114px;
+  left: 73px;
+}
