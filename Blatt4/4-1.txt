@@ -1,0 +1,10 @@
+A CSS rule is composed of a selector and a declaration block.
+Each declaration is composed of one or more property/value pairs.
+The declaration block begins and ends with the braces { ... }
+Each property/value pair is separated by the semicolon sign ;
+Each property must be separated from its value by a colon :
+The value depends on the type of property being used; for sizes, it consists of a number and a unit 
+(e.g., "12px"; for pixels, or "5pt", for dots); for colors, of a given word (e.g.. "orange") or in the hexadecimal value
+(it is recommended to use this option; e.g., for black, "#000000″); and in a series of options for other types of rules, such as text alignment (center, right, etc), or font type (arial, helvetica, sans-serif).
+It is recommended, but not required, to use lowercase for all text.
+A CSS file can contain infinite CSS rules, each rule can contain infinite selectors and each declaration can consist of an infinite number of property/value pairs.
