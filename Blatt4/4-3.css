@@ -1,0 +1,12 @@
+@font-face{
+    font-family: "Modius Frigid";
+    src: url("ModiusFrigid.woff") format('woff');
+}
+h1, h2, h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+h1{
+    color:#00ff00;
+    font-family: "Modius Frigid";
+}
