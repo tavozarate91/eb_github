@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        class Kegelstumpf {
+            constructor(R, r, h) {
+                this.R = R;
+                this.r = r;
+                this.h = h;
+            }
+            
+            volumen(){
+                var V = ((Math.PI*this.h)/3)*(Math.pow(this.R,2)+this.R*this.r+Math.pow(this.r,2));
+                return V;
+            }
+            
+            mantelflaeche(){
+                var m = Math.sqrt(Math.pow(this.R-this.r,2)+Math.pow(this.h,2));
+                var M = Math.PI*m*(this.R+this.r);
+                return M;
+            }
+            
+            oberflaeche(){
+                var m = this.mantelflaeche()
+                var O = Math.PI*Math.pow(this.R,2)+Math.PI*Math.pow(this.r,2)+m;
+                return O;
+            }
+        }
+
+        class Kreiskegel extends Kegelstumpf{
+            constructor(R, h){
+                if (R<0 || h<0){
+                    throw new Error("R oder h darf nicht negativ sein!")
+                }
+                super(R, 0, h);
+            }
+            
+        }
+
+        class Zylinder extends Kegelstumpf{
+            constructor(R, h){
+                if (R<0 || h<0){
+                    throw new Error("R oder h darf nicht negativ sein!")
+                }
+                super(R, R, h);
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let kegelstumpf = new Kegelstumpf(6, 2, 5);
+        var V = kegelstumpf.volumen();
+        console.log(V);
+        var M = kegelstumpf.mantelflaeche();
+        console.log(M);
+        var O = kegelstumpf.oberflaeche();
+        console.log(O);
+
+        let kreiskegel = new Kreiskegel(3, 4);
+        var V1 = kreiskegel.volumen();
+        console.log(V1);
+        var M1 = kreiskegel.mantelflaeche();
+        console.log(M1);
+        var O1 = kreiskegel.oberflaeche();
+        console.log(O1);
+
+        let zylinder = new Zylinder(3, 4);
+        var V2 = zylinder.volumen();
+        console.log(V2);
+        var M2 = zylinder.mantelflaeche();
+        console.log(M2);
+        var O2 = zylinder.oberflaeche();
+        console.log(O2);
+
+    </script>		
+</body>
+</html>
