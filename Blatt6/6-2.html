@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang ='de'>
+<head>
+    <meta charset="UTF-8">
+    <title>Aufgabe 6-2</title>
+</head>
+<body>
+<form method="GET" id="my_form"></form>
+
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  input[type=text] {
+  padding:5px;
+  border: 2px;
+  border-radius: 5px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.2);
+  }
+  label {
+  cursor: default;
+  }
+
+</style>
+
+<script src="6.2.js"></script>
+
+<table>
+        <thead>
+            <tr>
+                <th><b>Flaschen</b></th>
+                <th align="left"><b>Weinname</b></th>
+                <th><b>Einzelpreis</b></th>
+                <th align="right"><b>Preis</b></th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" id="Flaschen1" name="f1" value="" size="2" onkeypress="return onlyNumber(event)"></td>
+            <td align="left">Marienthaler Stiftsberg Rotweincuvée</td>
+            <td align="right">3.60</td>
+            <td><input type="text" id="Preis1" name="f1" value="" size="4" onkeypress="read_only()"></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="Flaschen2" name="f1" value="" size="2" onkeypress="return onlyNumber(event)"></td>
+            <td align="left">Riesling Classic</td>
+            <td align="right">3.70</td>
+            <td><input type="text" id="Preis2" name="f1" value="" size="4" onkeypress="read_only()"></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="Flaschen3" name="f1" value="" size="2" onkeypress="return onlyNumber(event)"></td>
+            <td align="left">Silvaner Selection Rheinhessen</td>
+            <td align="right">6.90</td>
+            <td><input type="text" id="Preis3" name="f1" value="" size="4" onkeypress="read_only()"></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="Flaschen4" name="f1" value="" size="2" onkeypress="return onlyNumber(event)"></td>
+            <td align="left">Domäne Avelsbach Riesling Sekt</td>
+            <td align="right">6.15</td>
+            <td><input type="text" id="Preis4" name="f1" value="" size="4" onkeypress="read_only()"></td>
+          </tr>
+          <tr>
+            <td><input type="radio" id="Flaschen5" name="f1" value="" onclick="return dhlclick(event)"></td>
+            <td align="left">Versand DHL (bis 12 Flaschen)</td>
+            <td align="right">10.00</td>
+            <td><input type="text" id="Preis5" name="f1" value="" size="4" onkeypress="read_only()"></td>
+          </tr>
+          <tr>
+            <td><input type="radio" id="Flaschen6" name="f1" value=""></td>
+            <td align="left">Versand Spedition</td>
+            <td align="right">15.00</td>
+            <td><input type="text" id="Preis6" name="f1" value="" size="4" onkeypress="read_only()"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style='border-left: hidden;'></td>
+            <td style='border-left: hidden;' align="right">Zwischensumme</td>
+            <td><input type="text" id="Preis7" name="f1" value="" size="4" onkeypress="read_only()"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style='border-left: hidden;'></td>
+            <td style='border-left: hidden;' align="right">MwSt</td>
+            <td><input type="text" id="Preis8" name="f1" value="" size="4" onkeypress="read_only()"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style='border-left: hidden;'></td>
+            <td style='border-left: hidden;' align="right"><b>Summe</b></td>
+            <td><input type="text" id="Preis9" name="f1" value="" size="4" onkeypress="read_only()"></td>
+          </tr>
+        </tbody>
+</table>
+
+</body>
+</html>
