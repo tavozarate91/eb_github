@@ -42,7 +42,7 @@
         <tbody>
           <tr>
             <td><input type="text" id="Flaschen" size="2" onkeypress="onlyNumber(event)"></td>
-            <td><input type="text" id="name" list="weine">
+            <td><input type="text" id="name" list="weine" onkeypress="wsort()">
 				<datalist id="weine">
 					<option value="Marienthaler Stiftsberg Rotweincuvée"/>
 					<option value="Riesling Classic"/>
@@ -50,7 +50,7 @@
 					<option value="Domäne Avelsbach Riesling Sekt"/>
 				</datalist>
 				</td>
-			<td><button onclick="makeTable()">Submit</td>
+			<td><button onclick="makeTable(); wsort();" >Submit</td>
 			<td></td>
 			<td></td>
           </tr>

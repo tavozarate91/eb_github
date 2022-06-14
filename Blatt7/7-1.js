@@ -80,13 +80,12 @@ let wein = [
 ["Domäne Avelsbach Riesling Sekt", 6.15]
 ];
 
-//wsort(wein);
+wsort(wein);
 
-/*function wsort(){
-	for (var i = 0; i < wein.length; i++) {
-		return (wein[i]).sort();
-	}
-}*/
+function wsort(){
+	var ws = wein.sort(function(a,b){return a[0]-b[0]});
+	return ws;
+}
 
 //wein.sort((wein, w) => wein[1].localeCompare(w[1]));
 
