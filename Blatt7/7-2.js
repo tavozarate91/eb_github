@@ -1,24 +1,24 @@
 //Definiere Konstruktor
-function Animal(averageAge, age){
+function Animal(averageAge, age) {
     this.averageAge = averageAge;
     this.age = age;
 }
 
 //Definiere Methode
-Animal.prototype.getAverageAge = function(){
+Animal.prototype.getAverageAge = function() {
     console.log(this.averageAge);
-}
-Animal.prototype.getAge = function(){
+};
+Animal.prototype.getAge = function() {
     console.log(this.age);
-}
-Animal.prototype.setAge = function(newAge){
+};
+Animal.prototype.setAge = function(newAge) {
     this.age = newAge;
-}
+};
 
 //Unterklassenkonstruktor
-function Elephant(averageAge, age){
+function Elephant(averageAge, age) {
     // Super-Konstruktor als erstes aufrufen
-    Animal.call(this, averageAge, age)
+    Animal.call(this, averageAge, age);
 }
 
 //Sub-Klasse erb von Super-Klasse
