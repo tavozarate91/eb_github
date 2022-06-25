@@ -7,13 +7,13 @@ function Animal(averageAge, age){
 //Definiere Methode
 Animal.prototype.getAverageAge = function(){
     console.log(this.averageAge);
-}
+};
 Animal.prototype.getAge = function(){
     console.log(this.age);
-}
+};
 Animal.prototype.setAge = function(newAge){
     this.age = newAge;
-}
+};
 
 //Unterklassenkonstruktor
 function Elephant(averageAge, age){
