@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='de'>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aufgabe 8-1</title>
+
+
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    input[type=text] {
+      padding: 5px;
+      border: 2px;
+      border-radius: 5px;
+      box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      cursor: default;
+    }
+  </style>
+</head>
+
+
+<form action="/" method="POST">
+
+  <body>
+    <script src="8-1.js"></script>
+    <button type="submit">submit</button>
+    <table id="table">
+      <thead>
+        <tr>
+          <th><b>Flaschen</b></th>
+          <th><b>Weinname</b></th>
+          <th><b>bestätigen</b></th>
+          <th><b>Einzelpreis</b></th>
+          <th><b>Preis</b></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" id="Flaschen" size="2" onkeypress="onlyNumber(event)"></td>
+          <td><input type="text" id="name" list="weine">
+            <datalist id="weine">
+              <option value="Marienthaler Stiftsberg Rotweincuvée"></option>
+              <option value="Riesling Classic"></option>
+              <option value="Silvaner Selection Rheinhessen"></option>
+              <option value="Domäne Avelsbach Riesling Sekt"></option>
+            </datalist>
+          </td>
+          <td><button type="button" onclick="makeTable()">ADD</button></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="radio" id="dhl" name="v" onclick="dhlclick(event)" value="0"></td>
+          <td>Versand DHL (bis 12 Flaschen)</td>
+          <td style='border-left: hidden;'></td>
+          <td>10.00</td>
+          <td><input type="text" id="dhlpreis" name="dhl" value="" size="4" onkeypress="read_only()"></td>
+        </tr>
+        <tr>
+          <td><input type="radio" id="sped" name="v" onclick="speditionclick(event)" value="0"></td>
+          <td>Versand Spedition</td>
+          <td style='border-left: hidden;'></td>
+          <td>15.00</td>
+          <td><input type="text" id="spedpreis" name="sped" value="" size="4" onkeypress="read_only()"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style='border-left: hidden;'></td>
+          <td style='border-left: hidden;'></td>
+          <td style='border-left: hidden;'>Flaschen</td>
+          <td><input type="text" id="flaschenG" name="flaschenG" value="" size="4" onkeypress="read_only()"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style='border-left: hidden;'></td>
+          <td style='border-left: hidden;'></td>
+          <td style='border-left: hidden;'>Zwischensumme</td>
+          <td><input type="text" id="zwischensumme" name="zsumme" value="" size="4" onkeypress="read_only()"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style='border-left: hidden;'></td>
+          <td style='border-left: hidden;'></td>
+          <td style='border-left: hidden;'>MwSt</td>
+          <td><input type="text" id="mwst" name="mwst" value="" size="4" onkeypress="read_only()"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style='border-left: hidden;'></td>
+          <td style='border-left: hidden;'></td>
+          <td style='border-left: hidden;'><b>Summe</b></td>
+          <td><input type="text" id="summe" name="summe" value="" size="4" onkeypress="read_only()"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</form>
+
+</html>
